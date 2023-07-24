@@ -1,0 +1,63 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+*.iml
+../../Desktop/java-learning-master/.idea
+/src/lessons/lesson3/hometask
+
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+/resources/ПОЛЕЗНЫЕ ССЫЛКИ
+/resources/lesson2/HomeTask1 comments.txt
+/resources/lesson2/Lesson2
+/resources/Hе забыть!!!.txt
+/resources/lesson2/Java-issue
+/src/lessons/lesson5/sorts/
+/src/lessons/Temp.java
+/resources/lesson4/Java run from command line with packages
+/resources/lesson4/Lesson4.txt
+/resources/lesson6/Lesson6.txt
+/resources/lesson7/Lesson7.txt
+/resources/lesson4/Tasks.txt
+/resources/lesson5/Tasks.txt
+/resources/lesson6/Tasks.txt
+/resources/lesson7/Tasks.txt
+/src/hometasks/
+/resources/lesson8/Tasks.txt
+/resources/lesson9/Lesson9.txt
+/resources/lesson9/Tasks.txt
+/resources/lesson9/Tasks-OOP.txt
+/src/lessons/lesson9/quiz/
+/resources/lesson10/Lesson10.txt
+/resources/lesson12/Tasks-ENUM.txt
+/resources/lesson10/Tasks.txt
+/resources/lesson12/Tasks-ENUM.txt
+/resources/lesson11/Lesson11.txt
+/resources/lesson11/Tasks.txt
+/src/lessons/lesson11/Example.java
+/src/lessons/lesson11/RegexIntroduction.java
+/src/lessons/lesson11/RegexIntroduction2.java
