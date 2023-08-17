@@ -8,7 +8,7 @@ public class Strings {
         System.out.println("Input the string from the keyword:");
         Scanner sc = new Scanner(System.in);
         String inputStr = sc.next();
-        StringMethods(inputStr);
+        //StringMethods(inputStr);
         numberOfDocument(inputStr);
     }
 
@@ -37,20 +37,26 @@ public class Strings {
 //        На вход передать строку (будем считать, что это номер документа).
 //        Номер документа имеет формат xxxx-yyy-xxxx-yyy-xyxy, где x — это число, а y — это буква.
         try {
-            Integer.parseInt(inputStr);
-            System.out.println(inputStr + " is valid integer of numbers");
-        } catch (NumberFormatException e) {
-            System.out.println(inputStr + " is not a numbers string");
-        }
-//        - Вывести на экран в одну строку два первых блока по 4 цифры.
-//        - Вывести на экран номер документа, но блоки из трех букв заменить на *** (каждая буква заменятся на *).
-//        - Вывести на экран только одни буквы из номера документа в формате yyy/yyy/y/y в нижнем регистре.
-//                - Вывести на экран буквы из номера документа в формате
-//        "Letters:yyy/yyy/y/y" в верхнем регистре(реализовать с помощью класса StringBuilder).
+            String[] inputStrBlock = inputStr.split("-");
+            System.out.println(inputStrBlock + " is valid integer of numbers");
+            // Вывести на экран в одну строку два первых блока по 4 цифры.
+            System.out.println("The first blocks are "+inputStr.substring(0,4)+" and "+inputStr.substring(5,9));
+           // - Вывести на экран номер документа, но блоки из трех букв заменить на *** (каждая буква заменятся на *).
+            System.out.println("The number of document, where blocks consist of three characters replace on * "+inputStr.replace("yyy", "*"));
+            // - Вывести на экран только одни буквы из номера документа в формате yyy/yyy/y/y в нижнем регистре.
+            System.out.println("The numbers from document in the format yyy/yyy/y/y in LowerCase "+inputStr.trim().toLowerCase().contains("yyyy/yyy/y/y"));
+//                - Вывести на экран буквы из номера документа в формате "Letters:yyy/yyy/y/y" в верхнем регистре(реализовать с помощью класса StringBuilder).
+            StringBuilder newStr = new StringBuilder(inputStr.trim().toUpperCase());
+            System.out.println("The chars from the string in format \"Letters:yyy/yyy/y/y\" in UpperCase "+newStr);
 //                - Проверить содержит ли номер документа последовательность abc и вывеcти сообщение содержит или нет(причем, abc и ABC считается
 //                одинаковой последовательностью).
+            System.out.println("The string contain abc without differences between UpperCase and LowerCase is "+inputStr.trim().toLowerCase().contains("abc"));
 //                - Проверить начинается ли номер документа с последовательности 555.
+            System.out.println("The number of document is starts with 555 "+inputStr.startsWith("555"));
 //          - Проверить заканчивается ли номер документа на последовательность 1a2b.
-//                Все эти методы реализовать в отдельном классе в статических методах, которые на вход (входным параметром) будут принимать вводимую на вход программы строку.
+            System.out.println("The number of document is end with 1a2b "+inputStr.endsWith("1a2b"));
+        } catch (Exception e) {
+            System.out.println(inputStr + " isn't a numbers of string or have too short length");
+        }
     }
 }
